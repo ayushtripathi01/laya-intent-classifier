@@ -1,0 +1,1610 @@
+[
+  {
+    "name": "casual_talk_greeting",
+    "description": "User is initiating a conversation with Vi Care using a greeting or pleasantry, with no specific service request yet. Triggered by salutations, informal openers, or small talk at the start of a session. DO NOT USE FOR: actual service requests disguised with a greeting opener — route those to the relevant intent.",
+    "examples": [
+      "Hi",
+      "Hello",
+      "Hey",
+      "Good morning",
+      "नमस्ते",
+      "How are you",
+      "हेल्लो VI केयर",
+      "What's up",
+      "Namaste"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Greeting or hello to open the conversation"
+  },
+  {
+    "name": "casual_talk_gratitude",
+    "description": "Expression of gratitude, appreciation, or positive feedback toward Vi or the chatbot with no additional service request or complaint. Use when the user is simply expressing thanks or satisfaction. DO NOT USE FOR: feedback combined with a service issue, requests for rewards or offers in exchange for praise, complaints disguised as compliments.",
+    "examples": [
+      "thank you",
+      "I am grateful",
+      "very good",
+      "धन्यवाद",
+      "very helpful",
+      "well done",
+      "great service",
+      "मुझे VI बहुत पसंद आ रहा है",
+      "good",
+      "jabardast"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Thanks or praise with no request"
+  },
+  {
+    "name": "casual_talk_abuse",
+    "description": "Expression of insult or abuse",
+    "examples": [
+      "fuck you",
+      "bitch",
+      "shut up",
+      "motherfucker",
+      "behenchod",
+      "q",
+      "teri ma ki",
+      "pagal",
+      "stupid",
+      "asshole",
+      "कुतिया",
+      "पागल",
+      "घटिया इंसान",
+      "dumb",
+      "go to hell"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Insult or abusive language"
+  },
+  {
+    "name": "help",
+    "description": "User asks for help, assistance, or support but does not specify the exact issue or action, or only mentions help related to Vi services (like recharge, network, SIM, plans). Eg. help, i need help, help me with recharge, mujhe sim ke liye help chahiye, help with network on device. Do not include : help me buy a car, help with homework, help in earning money, help with apple watch/samsung watch and any other such queries which are not related to telecom.",
+    "examples": [
+      "please help me",
+      "i need assistance",
+      "मेरी मदत करो",
+      "provide me support"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Asks for help without saying what for"
+  },
+  {
+    "name": "utilities_startover",
+    "description": "Request to restart or reset a conversation or process from the beginning, potentially indicating a desire to return to the main menu",
+    "examples": [
+      "lets start again",
+      "from the beginning",
+      "restart",
+      "fir se batao",
+      "फिर से शुरू करें",
+      "shuru se shuru karo",
+      "dubara chalu karo",
+      "1st question",
+      "दुबारा चालू करो"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Restart the conversation from the beginning"
+  },
+  {
+    "name": "activate_deactivate_DND",
+    "description": "User wants to ACTIVATE or DEACTIVATE Do Not Disturb (DND) on their Vi number to control unwanted promotional calls, SMS, and marketing communications. Use ONLY when user is taking a specific DND action. DO NOT USE FOR: general questions about what DND is or how it works — those go to KB.",
+    "examples": [
+      "Stop promotional messages on my Vi number",
+      "DND activate karo",
+      "मुझे स्पैम मैसेज नहीं चाहिए",
+      "Band karo company ke calls",
+      "मैं DND डीऐक्टिवेट करना चाहता हूं",
+      "block sales calls on Vi"
+    ],
+    "family": "call_features",
+    "option_text": "Turn Do Not Disturb (DND) on or off"
+  },
+  {
+    "name": "show_balance",
+    "description": "Inquiry about user's balance details, validity of racharge/plan/call/sms, data balance or data usage status including specific balance for a time",
+    "examples": [
+      "what is my talk time",
+      "सेकेंडरी बैलेंस की डिटेल्स",
+      "mera kitne gb ka pack hai",
+      "what is the incoming/outgoing call validity of my number",
+      "मेरे रीचार्ज की वैधता क्या है",
+      "when will my plan expire"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Check talktime, data balance or plan validity"
+  },
+  {
+    "name": "bill_payment_amount",
+    "description": "User actively wants to VIEW their bill amount, pay an outstanding bill, or initiate the bill payment process. Use ONLY when user intends to take action on their bill — NOT for general questions about how billing works. DO NOT USE FOR: how is my bill calculated, what is postpaid billing.",
+    "examples": [
+      "मुझे मेरे बिल की राशि के बारे में बता",
+      "can i get details of my bill",
+      "कितना पैसा बकाया है",
+      "mera outstanding amount kitna h"
+    ],
+    "family": "bills",
+    "option_text": "Check or pay the outstanding bill amount"
+  },
+  {
+    "name": "recharge",
+    "description": "User wants to actively PERFORM a recharge or change their plan RIGHT NOW. Use ONLY when user intends to recharge now or act on a plan change. DO NOT USE FOR: how does recharging work, what happens if I recharge in advance, general recharge policy questions — those go to KB.",
+    "examples": [
+      "recharge my mobile number",
+      "i want to recharge",
+      "need extra data",
+      "plan is very expensive i want to change"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Recharge now or change plan"
+  },
+  {
+    "name": "bill_recharge_history",
+    "description": "User wants to VIEW their past recharge or bill payment transaction history from their own account. Use ONLY when user is requesting to see their own history records. DO NOT USE FOR: how to check recharge history steps, what is a recharge history, general billing queries.",
+    "examples": [
+      "what is my payment history",
+      "mere last 5 recharge ki jankari chahiye",
+      "मेरे पहले रीचार्ज की details दे दो",
+      "when the last recharge was done"
+    ],
+    "family": "payments",
+    "option_text": "View past recharge or payment history"
+  },
+  {
+    "name": "bill_copy_request",
+    "description": "User wants to RECEIVE or DOWNLOAD a copy of their bill document, e-bill, or duplicate bill. Use ONLY when user is requesting the actual bill document. DO NOT USE FOR: questions about what a bill contains, how bills are generated, general billing policy questions.",
+    "examples": [
+      "डुप्लीकेट बिल हार्ड कॉपी चाहते हैं",
+      "i need a copy of my bill",
+      "muje mera bill aap email pe bhej do"
+    ],
+    "family": "bills",
+    "option_text": "Get a copy of the bill"
+  },
+  {
+    "name": "update_address",
+    "description": "User wants to CHANGE or UPDATE their registered billing address on their Vi account. Use ONLY when user intends to modify their address details. DO NOT USE FOR: what address is registered on my account, general questions about address requirements.",
+    "examples": [
+      "muje mera address change krna hai",
+      "aap mera billing address update kar dijiye",
+      "मुझे अपना पता बदलना होगा",
+      "मैंने नए शहर में शिफ्ट किया है",
+      "पिनकोड गलत है"
+    ],
+    "family": "account_profile",
+    "option_text": "Change registered billing address"
+  },
+  {
+    "name": "redirect_buy_new_connection",
+    "description": "User actively wants to BUY a new Vi SIM or PORT IN their existing number to Vi. Use ONLY when user intends to acquire a new connection. DO NOT USE FOR: what documents are needed for a new connection, how does porting work, Vi coverage questions — those go to KB.",
+    "examples": [
+      "please port my sim into vi",
+      "i need new postpaid connection",
+      "postpaid sim buy karna h",
+      "vi ka sim kitne me mil raha hai"
+    ],
+    "family": "sim_number",
+    "option_text": "Buy a new Vi SIM or port in to Vi"
+  },
+  {
+    "name": "VAS_activate",
+    "description": "User wants to ACTIVATE a Value Added Service (VAS), entertainment feature, or subscription alert on their Vi number. Use ONLY when user is taking action to enable a VAS. DO NOT USE FOR: what VAS services are available, general VAS information — those go to KB.",
+    "examples": [
+      "how to watch live tv",
+      "मुझे ज्योतिष अलर्ट चाहिए",
+      "i want to subscribe to latest contests",
+      "मुझे स्पोर्ट्स अलर्ट चाहिए",
+      "i want exam tips",
+      "i want to set voice mail on my number"
+    ],
+    "family": "vas",
+    "option_text": "Activate a value added service or alert subscription"
+  },
+  {
+    "name": "redirect_broadband",
+    "description": "User is inquiring about Vi broadband services, requesting a new connection, reporting a broadband issue, or asking about broadband pricing. Use when the query is specifically about fixed-line broadband, PRI lines, or home internet from Vi. DO NOT USE FOR: mobile data issues, Wi-Fi calling (VoWiFi), dongle or MiFi queries — those go to separate intents.",
+    "examples": [
+      "muje vf ka broadband connection lena hai",
+      "my broadband is not working properly",
+      "what is the cost of broadband connection"
+    ],
+    "family": "redirects",
+    "option_text": "Vi broadband or home internet"
+  },
+  {
+    "name": "redirect_dongles_mifi",
+    "description": "User is inquiring about Vi dongles or MiFi devices — including purchasing, troubleshooting, plans, or features. Use when query is specifically about portable Wi-Fi devices from Vi. DO NOT USE FOR: mobile data issues, home broadband, VoWiFi.",
+    "examples": [
+      "how do i access vodafone mi-fi",
+      "my vodafone dongle is not working",
+      "क्या आप मुझे डोंगल के लिए कोई अच्छे प्लान सजेस्ट कर सकते हो"
+    ],
+    "family": "redirects",
+    "option_text": "Vi dongle or MiFi device"
+  },
+  {
+    "name": "update_email",
+    "description": "User wants to CHANGE, UPDATE or REGISTER a new email address on their Vi account. Use ONLY when user is taking action on their registered email. DO NOT USE FOR: what email is registered on my account, why am I not receiving emails, general email policy questions.",
+    "examples": [
+      "i can't change my email address",
+      "प्लीज़ मेरी ईमेल आईडी बदल दीजिए",
+      "plz reset the email address on which the bill is sent",
+      "i want to change my connected email"
+    ],
+    "family": "account_profile",
+    "option_text": "Change or register email address"
+  },
+  {
+    "name": "data_not_working",
+    "description": "Issue related to internet connectivity, including slow speeds, no signal, and general problems with data services on mobile devices",
+    "examples": [
+      "sir mere internet ka speed nhi aa rhi h",
+      "4g 3g not working",
+      "i cant access my mobile net",
+      "unable to download",
+      "my data is not working"
+    ],
+    "family": "network_issues",
+    "option_text": "Internet not working or slow"
+  },
+  {
+    "name": "bill_payment_due_date",
+    "description": "User wants to CHECK their specific bill payment due date from their own account. Use ONLY when user is asking for their actual due date. DO NOT USE FOR: how are due dates calculated, what happens if I miss the due date, general billing cycle questions — those go to KB.",
+    "examples": [
+      "when do i have to pay the bill",
+      "mai payment kab tak kar sakta sakti hu",
+      "बिल भुगतान की मेरी देय तिथि क्या है",
+      "when is my next billing date"
+    ],
+    "family": "bills",
+    "option_text": "Ask the bill due date"
+  },
+  {
+    "name": "find_a_vodafone_store",
+    "description": "User wants to LOCATE a nearby Vi store or service center, or needs to visit a store for SIM-related activities like upgrade, activation, or ownership change. Use when user needs physical store assistance. DO NOT USE FOR: online SIM ordering, general account queries resolvable digitally.",
+    "examples": [
+      "tell me vodafone stores near me",
+      "i want to upgrade my sim",
+      "owner change",
+      "change name of the owner of the sim",
+      "how to activate my sim"
+    ],
+    "family": "support_escalation",
+    "option_text": "Find a Vi store or visit one for SIM work"
+  },
+  {
+    "name": "roaming_pack_activate",
+    "description": "User wants to ACTIVATE an international roaming pack or ISD service on their Vi number before or during travel abroad. Use ONLY when user intends to enable roaming services on sim or esim. DO NOT USE FOR: roaming charges by country, how roaming works, or general roaming policy questions — those go to KB.",
+    "examples": [
+      "मेरे Vi नंबर पर इंटरनेशनल रोमिंग ऐक्टिवेट करो",
+      "Activate roaming on my Vi number",
+      "Vi roaming chahiye",
+      "I want to make ISD calls from Vi",
+      "Start outgoing calls abroad"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Activate international roaming or ISD"
+  },
+  {
+    "name": "casual_talk_goodbye",
+    "description": "Expression of farewell or end-of-conversation signal with no additional service request. Use when the user is simply saying goodbye or indicating they are done. DO NOT USE FOR: farewells combined with an unresolved complaint or pending request — resolve the issue first.",
+    "examples": [
+      "bye",
+      "goodbye",
+      "बाद में बात करते हैं",
+      "मैं अब जा रहा हूं",
+      "see you tomorrow",
+      "अलविदा",
+      "फिर मिलते हैं"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Goodbye or ending the chat"
+  },
+  {
+    "name": "request_otp",
+    "description": "User needs Vi to RESEND an OTP or is NOT RECEIVING their OTP for Vi account/app verification or authentication. Use ONLY when user is stuck in an active OTP verification flow. DO NOT USE FOR: what is OTP, how OTP works, or general security queries.",
+    "examples": [
+      "Vi OTP nahi aaya",
+      "Resend OTP for Vi app login",
+      "मेरे Vi नंबर पर OTP नहीं आया है",
+      "Please send OTP to verify my Vi account",
+      "OTP not received for Vi app"
+    ],
+    "family": "support_escalation",
+    "option_text": "OTP not received or resend OTP"
+  },
+  {
+    "name": "talk_to_agent",
+    "description": "User wants to be CONNECTED to a live human agent, customer executive, or supervisor for their issue. Use when user explicitly requests human assistance. DO NOT USE FOR: general complaints or service issues where human transfer has not been explicitly requested — attempt resolution first.",
+    "examples": [
+      "can u call some executive",
+      "mujhe senior se baat krni hai",
+      "transfer me to an agent",
+      "i would like to speak with a vi associate",
+      "मैं कस्टमर केर के साथ लाइव चैट करना चाहती हूं",
+      "escalate my query"
+    ],
+    "family": "support_escalation",
+    "option_text": "Connect me to a human agent"
+  },
+  {
+    "name": "pack_plan_details",
+    "description": "User wants to VIEW details of their CURRENTLY ACTIVE Vi plan or pack — such as validity, data balance, call benefits, or SMS limits on their own number. Use ONLY for account-specific plan queries. DO NOT USE FOR: comparing Vi plans generally, browsing plans to buy, or how a specific plan works — those go to KB.",
+    "examples": [
+      "Mera Vi plan kya hai",
+      "What's my current Vi recharge plan",
+      "Vi active pack details batao",
+      "मुझे अपने Vi प्लान के बारे में जानना है",
+      "My current Vi call rate kya hai"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Details of my current active plan or pack"
+  },
+  {
+    "name": "utilities_stop",
+    "description": "User wants to CANCEL, EXIT, or STOP the current interaction or menu flow — indicating a change of mind or desire to opt out of the current step. Use when user signals they do not wish to proceed further. DO NOT USE FOR: service cancellations (VAS deactivation, plan cancellation) — those go to their respective intents.",
+    "examples": [
+      "मेरा मन बदल गया",
+      "कैंसल करें",
+      "looking for something else",
+      "exit",
+      "stop it",
+      "quit",
+      "अभी नहीं",
+      "मुख्य मेन्यू",
+      "छोड़ें"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Cancel or exit the current flow"
+  },
+  {
+    "name": "ok",
+    "description": "Simple acknowledgment or confirmation expressing agreement, understanding, or acceptance with no additional request. Use when the user's message is solely an affirmation with no follow-up ask. DO NOT USE FOR: confirmations that include a new question or service request — route to the relevant intent.",
+    "examples": [
+      "ok",
+      "okay",
+      "fine",
+      "all right",
+      "ठीक है",
+      "ह्म",
+      "हाँ",
+      "haan",
+      "ओ के"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Simple acknowledgement like ok or fine"
+  },
+  {
+    "name": "customer_care",
+    "description": "Request for customer support contact information, call center numbers, customer care details, as well as inquiry for assistance with service issues/complaints including request for assistance through phone call or intention of raising a complaint",
+    "examples": [
+      "वोडाफोन कस्टमर केयर नंबर क्या है",
+      "कॉल सेंटर नंबर देना",
+      "i need customer support executive",
+      "how to call vi service",
+      "solve my query through call you call me",
+      "i want to raise a complaint"
+    ],
+    "family": "support_escalation",
+    "option_text": "Customer care number or raise a complaint"
+  },
+  {
+    "name": "port_out",
+    "description": "User actively wants to PORT OUT their Vi number to another operator or discontinue Vi service. Use ONLY when user has clear intent to leave Vi. DO NOT USE FOR: how does porting work, what is the porting process, can I port my number (informational) — those go to KB.",
+    "examples": [
+      "port out my number",
+      "need upc porting code",
+      "i want to quit vodafone",
+      "discontinue with vodafone idea"
+    ],
+    "family": "sim_number",
+    "option_text": "Port out to another operator or leave Vi"
+  },
+  {
+    "name": "VAS_activate_caller_tune",
+    "description": "User wants to ACTIVATE, SET, or CHANGE a HelloTune / caller tune on their Vi number. Use ONLY when user intends to enable or modify a caller tune. DO NOT USE FOR: what is a HelloTune, how caller tune works, or availability queries — those go to KB.",
+    "examples": [
+      "Vi HelloTune activate karo",
+      "मैं Vi पर कॉलर ट्यून शुरू करना चाहता हूं",
+      "Set a song as my Vi caller tune",
+      "Vi par bollywood ringtone lagao",
+      "Change my Vi HelloTune"
+    ],
+    "family": "vas",
+    "option_text": "Set or change caller tune (HelloTune)"
+  },
+  {
+    "name": "account_information",
+    "description": "Request for information related to account details, ownership, and registration of mobile numbers, including inquiry about current address and account/sim status",
+    "examples": [
+      "मेरे अकाउंट की स्थिति क्या है",
+      "किसके नाम पर यह नंबर रजिस्टर है",
+      "मैं इस नंबर के बारे में जानना चाहता हूं",
+      "what is my account details",
+      "how to know the sim owner details",
+      "how can i check my vodafone number?",
+      "meri sim kitne din purani hai"
+    ],
+    "family": "account_profile",
+    "option_text": "Account, owner or SIM registration details"
+  },
+  {
+    "name": "LPC_waiver",
+    "description": "User wants to REQUEST a waiver, refund, or reversal of late payment charges on their account. Use ONLY when user is taking action to remove LPC charges. DO NOT USE FOR: what is a late payment charge, how is LPC calculated, general questions about late fees — those go to KB.",
+    "examples": [
+      "मेरी लेट पेमेंट फीस रिफंड करें",
+      "reverse late fee charge",
+      "waive off my lpc",
+      "लेट पेमेंट के चार्ज मत लगाओ"
+    ],
+    "family": "bills",
+    "option_text": "Waive or reverse late payment charges"
+  },
+  {
+    "name": "call_sms_history",
+    "description": "User wants to RETRIEVE their own call or SMS history records from their Vi account. Use ONLY when user is requesting to view their actual call/SMS logs. DO NOT USE FOR: how to check call history steps, how long are call records stored, general call history policy questions.",
+    "examples": [
+      "मुझे इस महीने के SMS की डिटेल्स चाहिए",
+      "मेरे नंबर का कॉल डिटेल चाहिए 1 मंथ का",
+      "i want last 3 call detail",
+      "incoming and outgoing calls list"
+    ],
+    "family": "account_profile",
+    "option_text": "Get my call or SMS history records"
+  },
+  {
+    "name": "bill_too_high",
+    "description": "User is DISPUTING a specific billing issue — their bill is higher than expected or contains incorrect charges. Use ONLY when user is actively raising a complaint about a real bill discrepancy. DO NOT USE FOR: general questions about what affects bill amount, how to reduce bills, tips to save on billing — those go to KB.",
+    "examples": [
+      "मुझसे बिल पर अतिरिक्त शुल्क लिया गया है",
+      "बिल की राशि गलत है",
+      "मेरा बिल इतना अधिक क्यों आया है",
+      "remove miscellaneous charges from my bill"
+    ],
+    "family": "bills",
+    "option_text": "Bill is too high or has wrong charges"
+  },
+  {
+    "name": "PUK",
+    "description": "User's Vi SIM is LOCKED and they need the PUK code or assistance to UNLOCK it. Use ONLY when user is dealing with a PIN-blocked or PUK-locked Vi SIM. DO NOT USE FOR: general SIM activation, lost SIM, or replacement SIM requests.",
+    "examples": [
+      "Mera Vi SIM lock ho gaya",
+      "Please give me my Vi PUK code",
+      "Vi SIM unlock karo",
+      "मेरा Vi सिम ब्लॉक हो गया है PUK चाहिए",
+      "My Vi SIM is asking for PUK"
+    ],
+    "family": "sim_number",
+    "option_text": "SIM locked, need PUK code"
+  },
+  {
+    "name": "recharge_done_but_not_credited",
+    "description": "User has ALREADY completed a recharge for their Vi number but the balance or plan has NOT REFLECTED in their account. Use ONLY when reporting a specific missing or failed Vi recharge transaction. DO NOT USE FOR: why recharges fail generally, recharge processing time queries — those go to KB.",
+    "examples": [
+      "Vi recharge hua but balance nahi aaya",
+      "Recharged Vi but plan not activated",
+      "Balance deducted but Vi account not updated",
+      "मैंने Vi रीचार्ज किया लेकिन बैलेंस नहीं आया"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Recharge done but balance or plan not received"
+  },
+  {
+    "name": "VAS_deactivate",
+    "description": "User wants to DEACTIVATE or STOP a specific Value Added Service currently active on their Vi number. Use ONLY when user intends to disable an active VAS or subscription. DO NOT USE FOR: what VAS services are available, how do VAS services work, general VAS information — those go to KB.",
+    "examples": [
+      "मेरी वैल्यू एडेड सर्विस खतम करें",
+      "deactivate missed call alert",
+      "stop this service on my number",
+      "cancel my membership",
+      "deactivate caller tune"
+    ],
+    "family": "vas",
+    "option_text": "Deactivate a value added service"
+  },
+  {
+    "name": "VAS_active_services",
+    "description": "User wants to VIEW the list of VAS services currently ACTIVE on their own Vi account. Use ONLY when user is asking about their own account's active VAS list. DO NOT USE FOR: what VAS services does Vi offer, how to activate VAS, general VAS feature questions — those go to KB.",
+    "examples": [
+      "मुझे अपने नंबर पर VAS की लिस्ट दिखाएं",
+      "do i still have access to amazon prime",
+      "क्या मेरे नंबर पर कोई सर्विस एक्टिवेट है",
+      "Kaunsi VAS active hai"
+    ],
+    "family": "vas",
+    "option_text": "List services currently active on my number"
+  },
+  {
+    "name": "VAS_complaints",
+    "description": "User is COMPLAINING about an unauthorized VAS charge on their Vi bill or REQUESTING A REFUND for a Vi VAS service they never activated. Use ONLY when user has a specific Vi VAS billing grievance. DO NOT USE FOR: general questions about VAS charges or pricing on Vi — those go to KB.",
+    "examples": [
+      "Vi ne bina activate kiye VAS charge kar diya",
+      "I want a refund for Vi VAS",
+      "Vi bill mein unknown VAS deduction",
+      "मैंने Vi VAS activate नहीं किया फिर भी पैसे कटे"
+    ],
+    "family": "vas",
+    "option_text": "Unauthorized VAS charge or VAS refund"
+  },
+  {
+    "name": "balance_deduction",
+    "description": "User is COMPLAINING that their balance has been incorrectly or unexpectedly deducted and wants it investigated or refunded. Use ONLY when user is raising an active complaint about a specific balance loss. DO NOT USE FOR: how balance deduction works, what services consume balance, general balance usage questions — those go to KB.",
+    "examples": [
+      "मेरा बैलेंस क्यों काट रहा है",
+      "my balance is being deducted on its own",
+      "retrieve my deducted amount",
+      "all of my balance is gone"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Balance deducted wrongly, want it refunded"
+  },
+  {
+    "name": "recharge_packs_and_plans",
+    "description": "User wants to BROWSE or SELECT an available Vi recharge plan to purchase — including prepaid packs, postpaid add-ons, data packs, or long-validity plans. Use ONLY when user is actively looking to pick and buy a Vi plan. DO NOT USE FOR: advance recharge queries, how plans work, general recharge policies — those MUST go to KB.",
+    "examples": [
+      "Show me Vi data packs",
+      "Vi ke 365-day plans dikhao",
+      "Postpaid add-on plans for Vi",
+      "तीन महीने का Vi प्लान कौन सा है",
+      "Best Vi unlimited calling pack"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Browse and choose a recharge plan or pack to buy"
+  },
+  {
+    "name": "lost_sim_phone",
+    "description": "User has LOST their phone or Vi SIM, or needs to BLOCK, REPLACE, or get a DUPLICATE SIM for their existing Vi number. Use ONLY for active SIM security or replacement requests. DO NOT USE FOR: eSIM activation, new Vi connection, or number portability — those go to their own intents.",
+    "examples": [
+      "Block my lost Vi SIM",
+      "Vi SIM kho gaya duplicate chahiye",
+      "Mera Vi number band karo",
+      "Lost phone Vi number block karo",
+      "मेरी Vi SIM खो गई है नई चाहिए"
+    ],
+    "family": "sim_number",
+    "option_text": "Lost SIM or phone: block, replace or duplicate SIM"
+  },
+  {
+    "name": "roaming_pack_deactivate",
+    "description": "User wants to DEACTIVATE or CANCEL an active international roaming pack on their Vi number. Use ONLY when user intends to stop roaming services. DO NOT USE FOR: what happens when roaming is deactivated, how to check roaming status, general roaming questions — those go to KB.",
+    "examples": [
+      "इंटरनेशनल रोमिंग पैक बंद करो",
+      "stop international roaming",
+      "roaming pack band kro",
+      "मुझे रोमिंग पैक नहीं चाहिए"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Deactivate international roaming pack"
+  },
+  {
+    "name": "updates_on_whatsapp",
+    "description": "User wants to RECEIVE or has CONSENTED to get Vi account updates, notifications, or service alerts via WhatsApp. Use ONLY when user is requesting or confirming WhatsApp communication preference for their Vi account.",
+    "examples": [
+      "Vi updates WhatsApp pe bhejo",
+      "मुझे Vi नंबर के अपडेट WhatsApp पे चाहिए",
+      "Share my Vi account info on WhatsApp",
+      "Sign me up for Vi WhatsApp updates",
+      "Consent for Vi WhatsApp notifications"
+    ],
+    "family": "support_escalation",
+    "option_text": "Get Vi account updates on WhatsApp"
+  },
+  {
+    "name": "redx_dispute_refund",
+    "description": "User wants to DEACTIVATE REDX, REFUND REDX charges, or report an unauthorized REDX activation. Use ONLY when user is taking action on an unwanted REDX subscription. DO NOT USE FOR: what is REDX, REDX plan benefits, how does REDX work — those go to KB.",
+    "examples": [
+      "गलती से REDX एक्टिवेट कर लिया",
+      "Mujhe REDX plan nahi chahiye",
+      "stop redx",
+      "refund my rupees charged on RED X"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Cancel REDX or get REDX charges refunded"
+  },
+  {
+    "name": "redx_family",
+    "description": "User wants to ADD family members to their REDX plan or understand REDX family benefits. Use ONLY when user is taking action or seeking specific details about adding family to their existing REDX plan. DO NOT USE FOR: general REDX plan features, REDX pricing, how to buy REDX — those go to KB.",
+    "examples": [
+      "रेडेक्स पर परिवार को जोड़ें",
+      "क्या मेरे परिवार को REDX मिल सकता है",
+      "how can i add family member if i am on redx plan",
+      "i am redx member and want to add family"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Add family members to REDX plan"
+  },
+  {
+    "name": "redx_amazon",
+    "description": "User has a query about Amazon Prime benefits linked to their REDX plan — including activation, membership conflicts, or entitlement. Use ONLY when the query is specifically about REDX + Amazon Prime. DO NOT USE FOR: general Amazon Prime queries not on REDX, other REDX benefits — those go to their respective intents.",
+    "examples": [
+      "मुझे REDX पर अमेजन प्राइम मेंबरशिप नहीं मिली",
+      "activate amazon prime on redx",
+      "is prime free for lifetime on redx",
+      "Tell me about redx Amazon Prime offer"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Amazon Prime on REDX plan"
+  },
+  {
+    "name": "redx_netflix",
+    "description": "User has a query about Netflix subscription linked to their REDX plan — including activation, plan type, or validity. Use ONLY when query is specifically about REDX + Netflix. DO NOT USE FOR: general Netflix queries not on REDX, other REDX OTT benefits — those go to their respective intents.",
+    "examples": [
+      "REDX पर नेटफ्लिक्स ऑटोमैटिक रूप से ऐक्टिवेट हो जाएगा क्या",
+      "रेडेक्स के साथ मुझे कौन सा नेटफ्लिक्स प्लान मिलेगा",
+      "Does REDX give free Netflix"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Netflix on REDX plan"
+  },
+  {
+    "name": "redx_faq",
+    "description": "Request for information about the REDX plan, including its activation process, features, benefits, data limits, international roaming options, associated perks and desire to activate the REDX plan",
+    "examples": [
+      "क्या REDX कस्टमर के लिए ज़ी5 मेंबरशिप का कोई शुल्क लगता है",
+      "क्या मैं REDX प्राप्त करने के लिए पात्र हूं?",
+      "redx plan ka kya fayede hain",
+      "how many month membership will i get on zee5 in redx plan",
+      "what is exit fee of redx",
+      "tell about vodafone play benefit in redx",
+      "Is there a Data limit on Redx plan?"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Questions about REDX plan features and eligibility"
+  },
+  {
+    "name": "VAS_activate_MCI",
+    "description": "User wants to ACTIVATE missed call alerts (MCI) or get details about missed calls while their phone was unavailable. Use ONLY when user is taking action to enable missed call notifications. DO NOT USE FOR: general call history, call logs, incoming call details — those go to call_sms_history.",
+    "examples": [
+      "कोई मिस कॉल के लिए मैसेज देदो",
+      "MCI ऐक्टिवेट करें",
+      "मेरे मिस्ड कॉलर अलर्ट एक्टिवेट करें",
+      "how to check who called me while my phone is switched off"
+    ],
+    "family": "vas",
+    "option_text": "Missed call alert (MCI) activation"
+  },
+  {
+    "name": "spyder_app_download",
+    "description": "User wants to DOWNLOAD the Vi App or needs a DOWNLOAD LINK, or is asking about the app's features and login options. Use ONLY for Vi App download and access-related requests. DO NOT USE FOR: troubleshooting Vi app issues or login errors — those go to relevant complaint intents.",
+    "examples": [
+      "Vi App download karna hai",
+      "Send me the Vi App link",
+      "Where to download the new Vi App",
+      "मुझे Vi ऐप का लिंक चाहिए",
+      "How do I install the Vi App"
+    ],
+    "family": "support_escalation",
+    "option_text": "Download the Vi app or get its link"
+  },
+  {
+    "name": "chotta_credit",
+    "description": "User wants to REQUEST or ACTIVATE emergency talktime, data loan, or chota credit on their Vi number. Use ONLY when user is actively trying to obtain emergency credit. DO NOT USE FOR: what is chota credit, how does emergency credit work, eligibility questions — those go to KB.",
+    "examples": [
+      "muje chhota credit chaiyee",
+      "मुझे एमरजेंसी टॉकटाइम चाहिए",
+      "loan chahiye",
+      "i want sms loan"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Emergency talktime or data loan"
+  },
+  {
+    "name": "update_alternate_number",
+    "description": "User wants to UPDATE, ADD, or CHANGE the alternate contact number registered on their Vi account. Use ONLY when user intends to modify their alternate number. DO NOT USE FOR: what is an alternate number, why do I need an alternate number, general account registration questions.",
+    "examples": [
+      "मैं अपना वैकल्पिक कांटेक्ट नंबर बदलना चाहती हूं",
+      "update alternative contact number",
+      "change my second number"
+    ],
+    "family": "account_profile",
+    "option_text": "Change alternate contact number"
+  },
+  {
+    "name": "payment_order_status",
+    "description": "User wants to CHECK the processing STATUS of a specific recharge or bill payment they have already made. Use ONLY when user is tracking an existing transaction. DO NOT USE FOR: how long does payment processing take, general payment queries, payment methods available.",
+    "examples": [
+      "प्लीज़ मेरा ऑर्डर स्टेटस चेक करें",
+      "what is my bill payment status",
+      "status of orderID of my bill paid two days ago"
+    ],
+    "family": "payments",
+    "option_text": "Status of a payment I already made"
+  },
+  {
+    "name": "SR_complaint_status",
+    "description": "User wants to CHECK the STATUS of an ALREADY RAISED complaint or service request (SR) with Vi. Use ONLY when user is following up on a specific existing Vi SR/ticket. DO NOT USE FOR: how to raise a new complaint, what complaints can be raised, or general SR process questions — those go to KB.",
+    "examples": [
+      "Vi complaint status check karo",
+      "Meri Vi SR ka kya hua",
+      "What is the update on my Vi complaint",
+      "मैं अपनी Vi शिकायत का स्टेटस चेक करना चाहती हूं"
+    ],
+    "family": "support_escalation",
+    "option_text": "Status of a complaint already raised"
+  },
+  {
+    "name": "vowifi_enquiry",
+    "description": "User wants to CHECK if VoWiFi (Wi-Fi Calling) is AVAILABLE or ACTIVE on their specific Vi account or device. Use ONLY when user is asking about their own Vi account's VoWiFi eligibility or activation status. DO NOT USE FOR: what is VoWiFi, how VoWiFi works, or general VoWiFi feature explanations — those MUST go to KB.",
+    "examples": [
+      "Can VoWiFi be activated on my Vi number",
+      "Is Vi VoWiFi active on my number",
+      "Vi WiFi calling available hai kya",
+      "Check my Vi VoWiFi status"
+    ],
+    "family": "network_issues",
+    "option_text": "Check if VoWiFi is available or active"
+  },
+  {
+    "name": "vowifi_complaints",
+    "description": "User is REPORTING an active PROBLEM with their VoWiFi service not working, not activating, or dropping. Use ONLY when user has a live VoWiFi issue. DO NOT USE FOR: general VoWiFi setup questions, how to configure VoWiFi, what is VoWiFi — those go to KB.",
+    "examples": [
+      "VoWiFi काम नहीं कर रहा है",
+      "unable to use voice over wifi",
+      "vowifi problem",
+      "no vowifi service in my city"
+    ],
+    "family": "network_issues",
+    "option_text": "VoWiFi not working"
+  },
+  {
+    "name": "vowifi_activate",
+    "description": "User wants to ACTIVATE VoWiFi (Voice over WiFi) on their Vi number or check device compatibility for VoWiFi. Use ONLY when user is taking action to enable VoWiFi. DO NOT USE FOR: VoWiFi not working issues — those go to vowifi_complaints.",
+    "examples": [
+      "वॉइस ओवर वाईफाई शुरू करें",
+      "मेरेको VoWiFi एक्टिवेट करना है",
+      "voice over wifi kaise milega",
+      "how to get vowifi"
+    ],
+    "family": "network_issues",
+    "option_text": "Activate VoWiFi (Wi-Fi calling)"
+  },
+  {
+    "name": "promise_to_pay",
+    "description": "User wants to ACTIVATE Promise to Pay (PTP) to restore blocked services by committing to pay later. Use ONLY when user is requesting PTP or a payment extension for a blocked number. DO NOT USE FOR: what is Promise to Pay, how does PTP work, general questions about payment extensions — those go to KB.",
+    "examples": [
+      "i will pay plz start my service",
+      "I want to use PTP service",
+      "प्रोमिस टू पे एक्टिवेट कर दो",
+      "baad me kar denge"
+    ],
+    "family": "payments",
+    "option_text": "Promise to Pay to restore blocked service"
+  },
+  {
+    "name": "cash_payment",
+    "description": "User wants to MAKE a cash payment for their Vi account and needs to know where or how to do so. Use ONLY when user intends to pay in cash. DO NOT USE FOR: what payment methods are accepted generally, online payment issues, general payment method comparison — those go to KB.",
+    "examples": [
+      "मैं कैश पेमेंट करना चाहता हूं",
+      "where can i do cash payment",
+      "i want to recharge without online payment"
+    ],
+    "family": "payments",
+    "option_text": "Pay in cash, where and how"
+  },
+  {
+    "name": "flash_service_deactivation",
+    "description": "User wants to STOP or DEACTIVATE flash messages (pop-up alerts) being sent to their Vi number. Use ONLY when user is requesting action to block Vi flash/pop-up messages. DO NOT USE FOR: general enquiries about what flash messages are.",
+    "examples": [
+      "Vi flash messages band karo",
+      "Stop pop-up SMS on my Vi number",
+      "मुझे Vi के ये बेकार पॉप-अप मैसेज नहीं चाहिए",
+      "How to block Vi flash messages",
+      "I keep getting Vi flash SMS — please stop them"
+    ],
+    "family": "call_features",
+    "option_text": "Stop flash or pop-up messages"
+  },
+  {
+    "name": "calls_not_working",
+    "description": "User is ACTIVELY EXPERIENCING a problem with MAKING or RECEIVING calls on their Vi number right now. Use ONLY when reporting a live call connectivity issue on Vi. DO NOT USE FOR: how to activate incoming calls, call rates, or general call feature questions — those go to KB.",
+    "examples": [
+      "Vi par calls nahi ho rahe",
+      "Vi number se call nahi ja raha",
+      "Call drop issue on Vi",
+      "Nobody can call my Vi number",
+      "मैं Vi से कॉल नहीं कर पा रहा हूं"
+    ],
+    "family": "network_issues",
+    "option_text": "Cannot make or receive calls"
+  },
+  {
+    "name": "sms_not_working",
+    "description": "User is ACTIVELY EXPERIENCING a problem SENDING or RECEIVING SMS on their Vi number. Use ONLY when reporting a live SMS service failure on Vi. DO NOT USE FOR: SMS pricing, how SMS works, or general messaging feature questions — those go to KB.",
+    "examples": [
+      "Vi se SMS nahi ja raha",
+      "Not getting text messages on Vi",
+      "Vi SMS sending failed",
+      "My Vi number is not receiving messages",
+      "Message not sent on Vi"
+    ],
+    "family": "network_issues",
+    "option_text": "Cannot send or receive SMS"
+  },
+  {
+    "name": "apn_settings",
+    "description": "Request for APN (Access Point Name) settings and internet configuration details to improve connectivity and data performance",
+    "examples": [
+      "I need Apn settings",
+      "give a new apn setting for faster internet",
+      "want best apn settings",
+      "नेट की सेटिंग भेजिए",
+      "send me internet settings",
+      "my gprs and mms settings no working",
+      "access point names",
+      "required Access point details"
+    ],
+    "family": "network_issues",
+    "option_text": "APN or internet settings"
+  },
+  {
+    "name": "rechargeForOthers",
+    "description": "User wants to RECHARGE someone ELSE's Vi number — such as a family member's or friend's Vi prepaid number. Use ONLY when user intends to perform a recharge for a different Vi number. DO NOT USE FOR: whether third-party recharges are allowed (informational), or how they work — those go to KB.",
+    "examples": [
+      "Recharge kisi aur ka Vi number",
+      "Meri family ke Vi number ko recharge karo",
+      "I want to recharge my friend's Vi number",
+      "Recharge my second Vi prepaid number"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Recharge someone else's Vi number"
+  },
+  {
+    "name": "NPD",
+    "description": "User wants to RETRIEVE MNP (Mobile Number Portability) receipts, donor operator payment proofs, or NPD-related documents for their port-in transaction. Use ONLY when user is requesting specific porting transaction documents. DO NOT USE FOR: how to port a number, port status check, general porting queries.",
+    "examples": [
+      "Update NPD receipt",
+      "i want MNP payment receipt",
+      "give me old operator payment receipt",
+      "my Port-in payment receipt",
+      "DNO Initiated Deactivation details"
+    ],
+    "family": "sim_number",
+    "option_text": "MNP or port-in payment receipt"
+  },
+  {
+    "name": "bill_breakup",
+    "description": "User wants to VIEW a detailed BREAKDOWN of specific charges on their own Vi bill. Use ONLY when user is asking about their own account's itemised bill. DO NOT USE FOR: how is a bill calculated generally, what charges appear on Vi bills, general billing explanation questions — those go to KB.",
+    "examples": [
+      "Mera Bill Break Up Kya hai",
+      "Explain charges on bill",
+      "provide bill with item wise breakup",
+      "मुझे अपने बिल का विवरण चाहिए"
+    ],
+    "family": "bills",
+    "option_text": "Itemised breakdown of my bill charges"
+  },
+  {
+    "name": "payForOthers",
+    "description": "User wants to PAY a Vi bill on behalf of someone else's number. Use ONLY when user intends to make a payment for a third party's Vi account. DO NOT USE FOR: can I pay for someone else's bill (informational), how does third-party payment work — those go to KB.",
+    "examples": [
+      "Pay for my friends number",
+      "Pay for my another post paid number",
+      "payment for my family/relative's number"
+    ],
+    "family": "payments",
+    "option_text": "Pay someone else's Vi bill"
+  },
+  {
+    "name": "prepaid_invoice",
+    "description": "User wants to RECEIVE or VIEW their prepaid invoice or monthly statement for their Vi number. Use ONLY when user is requesting their actual prepaid billing document. DO NOT USE FOR: what is a prepaid invoice, how does prepaid billing work, general prepaid account questions — those go to KB.",
+    "examples": [
+      "prepaid invoice for my number",
+      "prepaid monthly bill need",
+      "i want prepaid statement"
+    ],
+    "family": "bills",
+    "option_text": "Prepaid invoice or monthly statement"
+  },
+  {
+    "name": "family_plan",
+    "description": "User wants to JOIN, BUY, or ACTIVATE a Vi family plan for their number(s). Use ONLY when user intends to take action on purchasing or converting to a family plan. DO NOT USE FOR: what is a family plan, what are family plan benefits, how does family plan work — those MUST go to KB.",
+    "examples": [
+      "I want to convert to family plan",
+      "मैं फैमिली प्लान के तहत अपने दो नंबर लिंक करना चाहता हूं",
+      "i want to buy postpaid family plan"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Buy or join a Vi family plan"
+  },
+  {
+    "name": "SI_auto_pay",
+    "description": "User wants to SET UP, MANAGE, or ENQUIRE about automatic payments (auto-debit / standing instructions) for their Vi postpaid bill. Use ONLY when user intends to configure or review auto-pay for Vi.",
+    "examples": [
+      "Vi auto pay set karo",
+      "Vi bill ke liye auto debit lagao",
+      "Har month automatically Vi payment kati rahe",
+      "Set up SI auto pay for Vi postpaid",
+      "मेरे Vi बिल के लिए ऑटो पेमेंट शुरू करो"
+    ],
+    "family": "payments",
+    "option_text": "Set up or manage auto-debit for postpaid bill"
+  },
+  {
+    "name": "Issue_with_ir_pack",
+    "description": "User is FACING A PROBLEM with their international roaming pack — it is not activating, not working, or incorrectly billed. Use ONLY when user has an active roaming pack issue. DO NOT USE FOR: how do roaming packs work, roaming pack pricing, which countries are covered — those go to KB.",
+    "examples": [
+      "मेरा रोमिंग पैक अभी तक ऐक्टिवेट नहीं हुआ है",
+      "issue with roaming pack",
+      "i activated this 2 hours back and still cant see roaming activated"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Problem with my international roaming pack"
+  },
+  {
+    "name": "digital_sim",
+    "description": "User is facing an ISSUE or FAILURE while activating or using a Vi eSIM/digital SIM on their device. Use ONLY when the user is stuck or eSIM is not working as expected. DO NOT USE FOR: getting a new eSIM, converting physical SIM to eSIM, activation steps, reinstallation, or general eSIM queries — those go to KB.",
+    "examples": [
+      "esim not activating",
+      "esim activation failed",
+      "unable to activate digital sim",
+      "error while activating esim",
+      "stuck during esim setup"
+    ],
+    "family": "sim_number",
+    "option_text": "eSIM not activating or not working"
+  },
+  {
+    "name": "Issue_with_ir_technical",
+    "description": "User is ABROAD and EXPERIENCING a live technical issue with their international roaming service — calls, SMS, data, or OTPs not working. Use ONLY when user is actively facing a roaming connectivity problem while travelling. DO NOT USE FOR: how does roaming work abroad, roaming rates, which countries support Vi roaming — those go to KB.",
+    "examples": [
+      "the pack shows international roaming is activated but still unable to avail the services",
+      "i am in uae and my roaming is not working",
+      "roaming data chalu nahin ho raha hai"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Roaming not working while abroad"
+  },
+  {
+    "name": "pre2post",
+    "description": "User wants to SWITCH or MIGRATE their number from prepaid to postpaid. Use ONLY when user intends to take action on the migration. DO NOT USE FOR: what is the difference between prepaid and postpaid, benefits of postpaid, general comparison questions — those go to KB.",
+    "examples": [
+      "प्रीपेड को पोस्टपेड में स्विच करो",
+      "Migrate prepaid number to postpaid",
+      "Mujhe prepaid se postpaid karana hai"
+    ],
+    "family": "sim_number",
+    "option_text": "Switch from prepaid to postpaid"
+  },
+  {
+    "name": "5g",
+    "description": "User wants to ACTIVATE 5G or VERIFY 5G eligibility, plans, device compatibility, or network availability linked to their number or a specific location they provide. Use ONLY when the query is user-specific and requires validation or action. DO NOT USE FOR: general 5G awareness, technical explanations, or broad questions without user/account context — those go to KB.",
+    "examples": [
+      "activate 5g on my sim",
+      "check if my number supports 5g",
+      "5g plan details for my number",
+      "is 5g available in my area",
+      "is my device 5g compatible"
+    ],
+    "family": "network_issues",
+    "option_text": "Activate or check 5G eligibility and availability"
+  },
+  {
+    "name": "credit_limit",
+    "description": "User wants to VIEW, INCREASE, or MODIFY their Vi postpaid account credit limit. Use ONLY when user is taking action on their credit limit. DO NOT USE FOR: what is a credit limit, why do credit limits exist, general credit policy questions — those go to KB.",
+    "examples": [
+      "मैं अपनी क्रेडिट लिमिट जानना चाहता हूं",
+      "क्रेडिट सीमा संशोधित करें",
+      "meri credit limit kitni hai",
+      "manage Credit limit"
+    ],
+    "family": "account_profile",
+    "option_text": "View or change postpaid credit limit"
+  },
+  {
+    "name": "SOA",
+    "description": "User wants to RECEIVE or VIEW their account statement (SOA) for their Vi number. Use ONLY when user is requesting their actual statement document. DO NOT USE FOR: what is an SOA, how is an SOA generated, general statement policy questions — those go to KB.",
+    "examples": [
+      "मेरा स्टेटमेंट",
+      "send last three months statement",
+      "6 Mahine ki statement chahiye",
+      "please show SOA Postpaid sim ka"
+    ],
+    "family": "bills",
+    "option_text": "Account statement (SOA)"
+  },
+  {
+    "name": "post2pre",
+    "description": "User wants to SWITCH or CONVERT their number from postpaid to prepaid. Use ONLY when user intends to take action on the migration. DO NOT USE FOR: what is the difference between postpaid and prepaid, benefits of prepaid, general plan comparison — those go to KB.",
+    "examples": [
+      "Prepaid mein convert kardo",
+      "change the billing plan from postpaid to prepaid",
+      "VI पोस्टपेड से VI प्रीपेड"
+    ],
+    "family": "sim_number",
+    "option_text": "Switch from postpaid to prepaid"
+  },
+  {
+    "name": "volte",
+    "description": "User wants to ACTIVATE VoLTE or CHECK VoLTE activation status on their Vi number. Use ONLY when user is taking action on VoLTE. DO NOT USE FOR: what is VoLTE, how does VoLTE work, VoLTE benefits explained — those MUST go to KB.",
+    "examples": [
+      "how to enable volte calls on my number",
+      "is volte active on my number",
+      "trouble in activating volte",
+      "मुझे volte शुरू करने में परेशानी हो रही है"
+    ],
+    "family": "network_issues",
+    "option_text": "Activate or check VoLTE"
+  },
+  {
+    "name": "VI_family",
+    "description": "User wants to JOIN, ACTIVATE, MIGRATE to, or MANAGE a Vi Family Plan — including adding or linking multiple Vi connections under one shared plan. Use ONLY for active Vi Family plan setup or modification requests. DO NOT USE FOR: what is Vi Family plan, benefits of Vi Family plan, or general plan comparisons — those go to KB.",
+    "examples": [
+      "Vi Family Plan activate karna hai",
+      "Add a new Vi SIM to my family plan",
+      "मौजूदा Vi plan को Vi Family Offer में बदलना है",
+      "Link my prepaid SIM to Vi family account"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Join or manage Vi Family plan connections"
+  },
+  {
+    "name": "pay_G",
+    "description": "Inquiry or request related to ACTIVATING, DEACTIVATING, or getting DETAILS of the Vi PayGo data service — which allows data usage from main balance when a pack expires.",
+    "examples": [
+      "Vi PayGo activate karo",
+      "Main balance se Vi PayGo shuru karo",
+      "Vi PayGo charges kya hain",
+      "Is PayGo available on my Vi number",
+      "Vi data pack khatam ho gaya PayGo chahiye",
+      "Vi PayGo deactivate karo"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Vi PayGo: data from main balance after pack ends"
+  },
+  {
+    "name": "hotstar",
+    "description": "User wants to SUBSCRIBE, ACTIVATE, or TROUBLESHOOT Disney+ Hotstar linked to their Vi plan. Use ONLY when user is taking action on Hotstar via their Vi number. DO NOT USE FOR: general Hotstar content queries, creating Hotstar account independently of Vi — those go to KB.",
+    "examples": [
+      "मैं Hotstar की सदस्यता कैसे ले सकता हूँ",
+      "hotstar recharge karana tha",
+      "how to activate hotstar via vi",
+      "tell me the recharges to activate hotstar services"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Hotstar subscription through Vi plan"
+  },
+  {
+    "name": "sony_liv",
+    "description": "User wants to ACTIVATE, SUBSCRIBE, or TROUBLESHOOT Sony LIV linked to their Vi account or plan. Use ONLY when user is taking action on Sony LIV via Vi. DO NOT USE FOR: general Sony LIV content questions unrelated to Vi plan benefits.",
+    "examples": [
+      "क्या मैं अपने Vi नंबर पर सोनी लिव सक्रिय कर सकता हूं",
+      "Sony liv रिचार्ज के बारे में जानकारी चाहिए",
+      "Start Sony Liv on my device",
+      "Can I enable Sony Liv using my Vi account"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Sony LIV through Vi plan"
+  },
+  {
+    "name": "sun_next",
+    "description": "User wants to ACTIVATE, SUBSCRIBE, RECHARGE, or TROUBLESHOOT Sun NXT OTT service linked to their Vi number. Use when query involves Sun NXT via Vi. DO NOT USE FOR: general Sun NXT content questions unrelated to Vi.",
+    "examples": [
+      "मैं अपने नंबर पर Sunnxt सक्रिय करना चाहता हूं",
+      "Sun NXT recharge kaise kare",
+      "Sun NXT login issue",
+      "Sun NXT app not working",
+      "activate Sun NXT on my number"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Sun NXT through Vi plan"
+  },
+  {
+    "name": "vi_max",
+    "description": "Inquiry or request related to Vi Max plans — including plan features, benefits, pricing, tiers (Silver/Gold/Platinum), eligibility, comparison with REDX, activation, migration, family plans, data usage, or OTT benefits under Vi Max.",
+    "examples": [
+      "what is Vi Max plan",
+      "Vi Max plan details",
+      "Vi Max benefits",
+      "Vi Max Silver vs Gold",
+      "how to activate Vi Max plan",
+      "how to switch to Vi Max",
+      "Vi Max plan price",
+      "Vi Max family plan",
+      "is Vi Max available in my area",
+      "Vi Max vs REDX",
+      "Vi Max plan kya hai"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Vi Max plans, tiers and benefits"
+  },
+  {
+    "name": "amazon_prime",
+    "description": "User wants to ACTIVATE, SUBSCRIBE, CHECK ELIGIBILITY, or TROUBLESHOOT Amazon Prime membership linked to their Vi plan or number. Use when query is about Amazon Prime via Vi. DO NOT USE FOR: Amazon Prime queries completely unrelated to Vi plan or account — those go to KB.",
+    "examples": [
+      "activate Amazon Prime",
+      "subscribe to Prime membership",
+      "how to get Amazon Prime via vi",
+      "Amazon Prime charges",
+      "can I access Prime with my plan",
+      "Prime not working",
+      "Amazon Prime activate karo",
+      "kya mere plan me Prime hai"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Amazon Prime through Vi plan"
+  },
+  {
+    "name": "amazon_prime_postpaid",
+    "description": "Vi postpaid user wants to ACCESS, ACTIVATE, or ENQUIRE about their Amazon Prime Video benefit bundled with their Vi postpaid plan. Use ONLY when user is asking about the Amazon Prime subscription included in Vi postpaid. DO NOT USE FOR: general Amazon Prime subscription queries, billing, or non-Vi Amazon issues.",
+    "examples": [
+      "Vi postpaid ke saath Amazon Prime kaise activate karein",
+      "Is Amazon Prime free with my Vi plan",
+      "Vi plan mein Prime Video kab milega",
+      "Activate Amazon Prime on my Vi postpaid number"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Amazon Prime bundled with Vi postpaid plan"
+  },
+  {
+    "name": "vouchers_and_coupons",
+    "description": "User wants to VIEW, APPLY, or ENQUIRE about vouchers, coupons, discounts, or special promotional offers on their Vi recharges — including Vi Tuesday offers. Use ONLY when query is about promotional savings on Vi. DO NOT USE FOR: general plan comparison, standard recharge queries — those go to recharge intent.",
+    "examples": [
+      "are there any special offer available in Vi Tuesday offer",
+      "give me a discount on recharge",
+      "how many vouchers available on my number",
+      "I want coupon on my recharge",
+      "रिचार्ज कूपन व वाउचर की जानकारी दें"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Vouchers, coupons or discount offers on recharge"
+  },
+  {
+    "name": "Hero_UL",
+    "description": "User has a query about their Hero Unlimited (UL) prepaid plan — including activation status, night data benefits, plan perks, or usage details. Use when query is specifically about the Hero Unlimited plan on Vi. DO NOT USE FOR: general data balance queries, non-Hero unlimited plan queries.",
+    "examples": [
+      "am i in a Hero Unlimited plan",
+      "Mujhe UL data for night avail karna hai",
+      "1 gb free data on my hero unlimited",
+      "free 12 to 6 data"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Hero Unlimited prepaid plan and night data"
+  },
+  {
+    "name": "call_waiting",
+    "description": "User wants to ACTIVATE or DEACTIVATE call waiting service on their number. Use ONLY when user is taking action on call waiting. DO NOT USE FOR: what is call waiting, how does call waiting work, general feature explanation",
+    "examples": [
+      "how to activate call waiting",
+      "call waiting service band karni hai",
+      "call waiting ka kya charge hai",
+      "amount deducted for call waiting pls close it"
+    ],
+    "family": "call_features",
+    "option_text": "Turn call waiting on or off"
+  },
+  {
+    "name": "payment_receipt",
+    "description": "User wants to RECEIVE or VIEW a payment receipt or transaction slip for a specific Vi payment. Use ONLY when user is requesting an actual receipt document. DO NOT USE FOR: what is a payment receipt, how to read a receipt, general payment documentation questions.",
+    "examples": [
+      "मेरे इस महीने का भुगतान रसीद दो",
+      "बिल पेमेंट स्लिप दिखाओ",
+      "pls give payment receipt",
+      "need bill payment receipt"
+    ],
+    "family": "payments",
+    "option_text": "Receipt for a payment"
+  },
+  {
+    "name": "barred_check",
+    "description": "User's Vi number is SUSPENDED, BARRED, or INACTIVE and they want it REACTIVATED or services restored. Use ONLY when user is requesting unbarring of their Vi number. DO NOT USE FOR: what causes Vi suspension, general barring policy questions — those go to KB.",
+    "examples": [
+      "Vi number inactive ho gaya reactivate karo",
+      "Mera Vi number band hai please chalu karo",
+      "Remove barring from my Vi number",
+      "Vi service suspend ho gaya restore karo",
+      "Bill pay kar diya but Vi still inactive"
+    ],
+    "family": "sim_number",
+    "option_text": "Number barred or inactive, want it reactivated"
+  },
+  {
+    "name": "safe_custody",
+    "description": "User wants to ACTIVATE Vi Safe Custody service to preserve and protect their Vi number during an extended absence (e.g., travel abroad, hospitalization). Use ONLY when user intends to take action on safe custody. DO NOT USE FOR: what is safe custody or how it works — those go to KB.",
+    "examples": [
+      "Vi Safe Custody activate karo",
+      "6 mahine ke liye Vi number safe custody mein rakhna hai",
+      "मुझे Vi सेफ कस्टडी सेवा चाहिए",
+      "Preserve my Vi number while I'm abroad"
+    ],
+    "family": "sim_number",
+    "option_text": "Safe Custody to keep number while away"
+  },
+  {
+    "name": "swiggy_one",
+    "description": "User wants to CLAIM, ACTIVATE, or MANAGE the Swiggy One membership benefit linked to their Vi plan. Use ONLY when user is taking action on Swiggy One via Vi. DO NOT USE FOR: general Swiggy queries unrelated to Vi plan benefits.",
+    "examples": [
+      "my plan contains swiggy membership pls activate",
+      "Claim swiggy benefits",
+      "Does my plan have Swiggy One membership",
+      "Am I eligible for Swiggy One membership",
+      "क्या मेरे प्लान में स्विग्गी वन मेंबरशिप है"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Swiggy One benefit with Vi plan"
+  },
+  {
+    "name": "norton_security",
+    "description": "User wants to ACTIVATE, CLAIM, or USE the Norton Security benefit included in their Vi plan. Use ONLY when user is taking action on Norton Security via Vi. DO NOT USE FOR: general cybersecurity questions, Norton queries unrelated to Vi plan.",
+    "examples": [
+      "Norton सिक्यॉरिटी चालू कर दें",
+      "how to use norton security coupon",
+      "does my plan includes norton security benefit",
+      "unable to claim norton security benefits"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Norton Security benefit with Vi plan"
+  },
+  {
+    "name": "eazy_diner",
+    "description": "User wants to ACTIVATE, CLAIM, or USE the EazyDiner membership or dining benefit linked to their Vi plan. Use ONLY when user is taking action on EazyDiner via Vi. DO NOT USE FOR: general dining or restaurant queries unrelated to Vi.",
+    "examples": [
+      "activate eazy dinner membership",
+      "Eazy dinner कूपन चाहिए",
+      "क्या मेरे प्लान में eazydiner है",
+      "how to claim eazy diner membership",
+      "unable to claim eazy diner benefits"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "EazyDiner benefit with Vi plan"
+  },
+  {
+    "name": "ease_my_trip",
+    "description": "User wants to ACTIVATE, CLAIM, or REDEEM EaseMyTrip travel discounts or benefits linked to their Vi plan. Use ONLY when user is taking action on EaseMyTrip via Vi. DO NOT USE FOR: general travel booking queries unrelated to Vi plan benefits.",
+    "examples": [
+      "activate flight discount coupon",
+      "easemy trip discount redemption",
+      "how to redeem discount in ease my trip",
+      "unable to claim easemytrip benefits"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "EaseMyTrip discount with Vi plan"
+  },
+  {
+    "name": "vi_movies_tv",
+    "description": "User is enquiring about or wants to ACCESS Vi's OTT and entertainment benefits — including Zee5, SonyLIV, Klikk, FanCode, Chaupal, and other streaming services bundled with their Vi plan.",
+    "examples": [
+      "Is Zee5 free on my Vi plan",
+      "Vi ke saath SonyLIV kaise dekhun",
+      "Vi Movies & TV ke features kya hain",
+      "Vi OTT benefits activate karo",
+      "Show me Vi entertainment pack details",
+      "FanCode available hai kya Vi par"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Vi Movies & TV OTT benefits"
+  },
+  {
+    "name": "vi_guarantee",
+    "description": "User is ENQUIRING about or wants to CLAIM their Vi Guarantee benefit — typically 130GB of extra data offered as part of Vi's network quality promise.",
+    "examples": [
+      "Vi Guarantee 130GB kaise milega",
+      "Vi Guarantee claim karna hai",
+      "Vi ke 130GB guarantee data kahan gaye",
+      "How to get Vi Guarantee data",
+      "Vi गारंटी के बारे में बताओ",
+      "Extra 130GB data from Vi Guarantee"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Vi Guarantee 130GB extra data"
+  },
+  {
+    "name": "family_linking",
+    "description": "User wants to LINK, MANAGE, or TROUBLESHOOT the Vi Family Plan or family linking feature — including adding members, checking link status, resolving linking errors, or managing the family group. Use ONLY when taking action on family linking. DO NOT USE FOR: family plan purchase — those go to family_plan intent.",
+    "examples": [
+      "how to link my family numbers",
+      "add my wife or son to my plan",
+      "family linking not working",
+      "link request pending",
+      "confirm my family linking status",
+      "remove a member from family plan",
+      "family linking rejected or any other pairing queries related to esim",
+      "apple watch",
+      "samsung watch or any other such queries not related to family linking"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Link or manage family plan members and link status"
+  },
+  {
+    "name": "skyc_reverification",
+    "description": "User wants to START, COMPLETE, or FIX their SKYC (Self KYC) re-verification process on their Vi account. Use ONLY when user is actively taking action on KYC verification. DO NOT USE FOR: what is SKYC, why is SKYC required, general KYC policy questions — those go to KB.",
+    "examples": [
+      "start my SKYC again",
+      "SKYC link not working",
+      "reverify my KYC",
+      "SKYC rejected please reopen",
+      "help me complete SKYC reverification"
+    ],
+    "family": "account_profile",
+    "option_text": "SKYC self-KYC reverification"
+  },
+  {
+    "name": "cancel_autopay",
+    "description": "User wants to CANCEL or DEACTIVATE AutoPay on their Vi account. Use ONLY when user is taking action to stop automatic payments. DO NOT USE FOR: what is AutoPay, how does AutoPay work, benefits of AutoPay — those go to KB.",
+    "examples": [
+      "autopay बंद करो",
+      "stop autopay",
+      "deactivate my autopay service",
+      "cancel autopay for my REDX plan",
+      "I want to remove autopay"
+    ],
+    "family": "payments",
+    "option_text": "Cancel AutoPay"
+  },
+  {
+    "name": "ir_services_deactivate",
+    "description": "User wants to DEACTIVATE or TURN OFF International Roaming or ISD calling services on their Vi number. Use ONLY when user is taking action to stop IR services entirely. DO NOT USE FOR: how does IR deactivation work, what happens when roaming is turned off, general roaming questions — those go to KB.",
+    "examples": [
+      "deactivate international roaming",
+      "stop roaming services",
+      "roaming band karo",
+      "IR deactivation request",
+      "remove IR services"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Turn off international roaming or ISD service"
+  },
+  {
+    "name": "opt_out",
+    "description": "User wants to OPT OUT, CANCEL, or STOP a specific active service, subscription, plan, or communication on their Vi account. Use ONLY when user is taking action to remove something active. DO NOT USE FOR: what services can be opted out, how does unsubscribing work, general cancellation policy — those go to KB.",
+    "examples": [
+      "cancel my subscription",
+      "stop auto renewal",
+      "remove OTT benefit",
+      "unsubscribe from Vi messages",
+      "stop this pack"
+    ],
+    "family": "vas",
+    "option_text": "Opt out or cancel a subscription, service or messages"
+  },
+  {
+    "name": "transfer_of_ownership",
+    "description": "User wants to INITIATE or COMPLETE a SIM ownership transfer or name change on their Vi number. Use ONLY when user is taking action on ownership transfer. DO NOT USE FOR: what documents are needed for ownership transfer, how does ownership transfer work generally — those go to KB.",
+    "examples": [
+      "transfer number to another person",
+      "change name on SIM card",
+      "transfer SIM to family member",
+      "update SIM owner details"
+    ],
+    "family": "account_profile",
+    "option_text": "Transfer SIM ownership or change owner name"
+  },
+  {
+    "name": "fraud_calls",
+    "description": "User wants to REPORT or BLOCK fraudulent, scam, or impersonation calls they are RECEIVING on their Vi number, including Chakshu portal reporting. Use ONLY when user is taking action against fraud calls. DO NOT USE FOR: general awareness about fraud calls or identification tips — those go to KB.",
+    "examples": [
+      "Report fraud call on Vi number",
+      "Block scam callers on Vi",
+      "Fake OTP calls aa rahe hain Vi par",
+      "Vi number par fraud call report karo",
+      "Chakshu pe fraudulent number report karna hai"
+    ],
+    "family": "support_escalation",
+    "option_text": "Report or block fraud and scam calls"
+  },
+  {
+    "name": "disney_hotstar",
+    "description": "User wants to ACTIVATE, CHECK STATUS, TROUBLESHOOT, or MANAGE Disney+ Hotstar (JioHotstar) subscription linked to their Vi plan — including activation, deactivation, plan status, validity, and login or access issues. Use when query is about Hotstar via Vi. DO NOT USE FOR: general Hotstar content queries unrelated to Vi.",
+    "examples": [
+      "activate Hotstar subscription",
+      "check JioHotstar plan",
+      "Disney Hotstar not working",
+      "Hotstar recharge offer",
+      "start Hotstar VIP",
+      "deactivate Hotstar",
+      "unable to use Disney+ Hotstar",
+      "check Hotstar validity"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Disney+ Hotstar status, issues or management"
+  },
+  {
+    "name": "family_delinking",
+    "description": "User wants to REMOVE or UNLINK a number from their Vi Family plan. Use ONLY when user is taking action to delink family members. DO NOT USE FOR: what is family delinking, how does delinking affect billing, general family plan questions — those go to KB.",
+    "examples": [
+      "remove number from family plan",
+      "unlink family member",
+      "stop family sharing",
+      "confirm my delinking status"
+    ],
+    "family": "plans_family_redx",
+    "option_text": "Remove a number from Vi Family plan"
+  },
+  {
+    "name": "pre_caller_deactivate",
+    "description": "User wants to DISABLE or REMOVE the pre-call announcement or voice alert that plays before calls on their Vi number. Use ONLY when user intends to deactivate this feature. DO NOT USE FOR: what is a pre-call announcement, why do I hear a message before calls, general call feature questions — those go to KB.",
+    "examples": [
+      "remove pre-call announcement",
+      "disable pre-call voice message",
+      "I don't want the announcement before calls",
+      "turn off pre-call recording warning"
+    ],
+    "family": "call_features",
+    "option_text": "Remove announcement played before calls"
+  },
+  {
+    "name": "deactivate_IR_pack",
+    "description": "User wants to DEACTIVATE or STOP a specific active International Roaming pack on their Vi number. Use ONLY when user is taking action to remove an IR pack. DO NOT USE FOR: what is an IR pack, how do IR packs work, general roaming pack questions — those go to KB.",
+    "examples": [
+      "deactivate IR pack",
+      "remove international roaming pack",
+      "stop IR pack",
+      "international pack band karo",
+      "roaming pack hatao"
+    ],
+    "family": "roaming_isd",
+    "option_text": "Deactivate a specific international roaming pack"
+  },
+  {
+    "name": "call_forwarding",
+    "description": "User wants to DISABLE or REMOVE call forwarding or call divert currently active on their Vi number. Use ONLY when user is taking action to stop call forwarding. DO NOT USE FOR: what is call forwarding, how does call divert work, how to set up call forwarding — those go to KB.",
+    "examples": [
+      "disable call forwarding",
+      "stop call forwarding",
+      "remove call forwarding from my number",
+      "my calls are being forwarded to another number"
+    ],
+    "family": "call_features",
+    "option_text": "Turn off call forwarding or divert"
+  },
+  {
+    "name": "bill_date",
+    "description": "User wants to CHANGE or RESCHEDULE their billing cycle date on their Vi postpaid account. Use ONLY when user is taking action to modify their billing date. DO NOT USE FOR: what is a billing cycle, how does billing date work, general billing schedule questions — those go to KB.",
+    "examples": [
+      "Please change my billing cycle date",
+      "change my bill generation date",
+      "shift my billing cycle to another date",
+      "set a new billing date"
+    ],
+    "family": "bills",
+    "option_text": "Change billing cycle date"
+  },
+  {
+    "name": "gst",
+    "description": "User is raising a specific COMPLAINT or requesting ACTION regarding GST charges on their bill, such as disputing an amount, requesting refund, or asking for corrected invoice. Use ONLY when user is reporting a discrepancy or requesting resolution. DO NOT USE FOR: what is GST, how is GST calculated generally, GST percentage information, or general billing queries — those go to KB.",
+    "examples": [
+      "GST charged wrongly on my bill",
+      "can I get refund for extra GST",
+      "send corrected GST invoice",
+      "why is GST so high on my specific bill"
+    ],
+    "family": "bills",
+    "option_text": "Complaint or refund about GST on bill"
+  },
+  {
+    "name": "online_payment_tutorial",
+    "description": "User NEEDS HELP or GUIDANCE on HOW TO PERFORM an online or digital payment transaction. Use ONLY when user is stuck, confused, or needs step-by-step instructions to complete a payment (bill/recharge/other). DO NOT USE FOR: what payment methods are available (informational), can you accept method X, payment policies, payment history queries — those go to KB.",
+    "examples": [
+      "how do I use UPI to pay",
+      "help me complete this online payment",
+      "I don't know how to pay on the app",
+      "step by step payment instructions",
+      "I'm unable to find the payment option"
+    ],
+    "family": "payments",
+    "option_text": "How to make an online payment"
+  },
+  {
+    "name": "payment_not_visible",
+    "description": "User has ALREADY MADE a payment for their Vi account (bill/recharge) but it is NOT REFLECTED or the service is still showing as unpaid or inactive. Use ONLY when reporting a specific missing Vi payment. DO NOT USE FOR: how long Vi payment reflection takes generally, payment processing timelines — those go to KB.",
+    "examples": [
+      "Vi bill pay kiya but still pending dikh raha hai",
+      "Payment done but Vi account not updated",
+      "Paid Vi bill but service still inactive",
+      "मेरा Vi payment reflect नहीं हो रहा"
+    ],
+    "family": "payments",
+    "option_text": "Payment made but not reflected"
+  },
+  {
+    "name": "online_recharge_tutorial",
+    "description": "User needs GUIDANCE on how to recharge their Vi number using online or digital methods — apps, websites, UPI, cards, or wallets — or is facing trouble completing an online recharge. Use when query is about the process or steps to recharge digitally. DO NOT USE FOR: performing a recharge directly — that goes to recharge intent.",
+    "examples": [
+      "how to recharge online",
+      "help me recharge",
+      "recharge through UPI",
+      "recharge using card",
+      "how to recharge on vi app",
+      "I am unable to recharge",
+      "recharge via Google Pay"
+    ],
+    "family": "recharge_balance",
+    "option_text": "How to recharge online or recharge trouble"
+  },
+  {
+    "name": "redirect_buy_smartphones",
+    "description": "User wants to BUY a new smartphone or explore mobile device offers, discounts, or deals through Vi. Use when user is seeking to purchase a device or explore handset offers. DO NOT USE FOR: device compatibility queries for existing services like VoLTE or 5G — those go to respective intents.",
+    "examples": [
+      "I want to buy a smartphone",
+      "latest mobile phone offers",
+      "discount on iPhone",
+      "offers on smartphones",
+      "where can I buy phone",
+      "am I eligible for iPhone offer"
+    ],
+    "family": "redirects",
+    "option_text": "Buy a smartphone or phone offers"
+  },
+  {
+    "name": "zee5",
+    "description": "User wants to ACTIVATE, SUBSCRIBE, TROUBLESHOOT, or MANAGE ZEE5 OTT service linked to their Vi plan — including benefit claims, renewal, cancellation, app issues, and account troubleshooting. Use when query is about ZEE5 via Vi. DO NOT USE FOR: general ZEE5 content queries unrelated to Vi.",
+    "examples": [
+      "ZEE5 not working",
+      "ZEE5 benefit not received",
+      "how to activate ZEE5",
+      "ZEE5 subscription details",
+      "cancel ZEE5 subscription",
+      "ZEE5 not showing in my plan",
+      "error linking ZEE5 with Vi"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "ZEE5 through Vi plan"
+  },
+  {
+    "name": "redirect_track_sim",
+    "description": "User wants to TRACK the delivery status of their newly ordered Vi SIM card. Use ONLY when user is following up on a specific SIM delivery order. DO NOT USE FOR: how long does SIM delivery take, general SIM ordering questions — those go to KB.",
+    "examples": [
+      "track my SIM order",
+      "SIM delivery status",
+      "when will I receive my new SIM",
+      "SIM not delivered yet"
+    ],
+    "family": "sim_number",
+    "option_text": "Track delivery of new SIM"
+  },
+  {
+    "name": "new_connection_or_esim",
+    "description": "User wants to GET a NEW Vi mobile connection or eSIM — including purchase, activation, home delivery, porting another operator's number to Vi, or KYC setup. Use ONLY when user intends to acquire a new Vi number or connection. DO NOT USE FOR: what documents are needed (FAQ), eSIM compatibility questions, or informational queries about Vi connections — those go to KB.",
+    "examples": [
+      "New Vi SIM lena hai",
+      "Vi eSIM activate karo",
+      "Port my number to Vi",
+      "Vi ka naya number chahiye",
+      "New Vi SIM home delivery",
+      "KYC for new Vi connection"
+    ],
+    "family": "sim_number",
+    "option_text": "Get a new Vi connection or eSIM"
+  },
+  {
+    "name": "change_language",
+    "description": "Triggered when the user explicitly requests to switch the conversation language or inputs a language name",
+    "examples": [
+      "change language to Tamil,मुझे हिंदी में बोलो",
+      "Tamil"
+    ],
+    "family": "chitchat_control",
+    "option_text": "Switch conversation language"
+  },
+  {
+    "name": "data_delight",
+    "description": "This intent caters to prepaid users looking for information related to Data Delight packs, including checking eligibility, availability of additional data benefits, activation process, and accessing the offer through the Vi App or recharge/offers section.",
+    "examples": [
+      "i need data delight",
+      "i want data delight",
+      "data delight is required",
+      "data delight"
+    ],
+    "family": "recharge_balance",
+    "option_text": "Data Delight packs and extra data offer"
+  },
+  {
+    "name": "Spotify",
+    "description": "This intent caters to users looking to claim, activate, access, or learn more about the Spotify benefit included with their eligible Vi plan. It covers queries related to Spotify subscription eligibility, activation steps, redemption process, account linking, benefit validity, and troubleshooting issues while claiming the Spotify offer through Vi.",
+    "examples": [
+      "i need spotify",
+      "my spotify benefits",
+      "i want spotify",
+      "spotify is required",
+      "spotify"
+    ],
+    "family": "ott_partner_benefits",
+    "option_text": "Spotify benefit with Vi plan"
+  },
+  {
+    "name": "out_of_scope",
+    "family": "out_of_scope",
+    "description": "Message unrelated to Vi telecom services or too vague/unsupported to map to any intent (e.g. buying a car, homework, other companies' products).",
+    "option_text": "None of these: not about Vi telecom services",
+    "examples": []
+  }
+]

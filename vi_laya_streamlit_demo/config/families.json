@@ -1,0 +1,232 @@
+[
+  {
+    "name": "chitchat_control",
+    "description": "greetings, thanks, goodbye, abuse, ok, generic help, restart/stop, change language",
+    "intents": [
+      "casual_talk_greeting",
+      "casual_talk_gratitude",
+      "casual_talk_abuse",
+      "help",
+      "utilities_startover",
+      "casual_talk_goodbye",
+      "utilities_stop",
+      "ok",
+      "change_language"
+    ],
+    "n_intents": 9
+  },
+  {
+    "name": "call_features",
+    "description": "DND, call waiting, call forwarding, pre-call announcement, flash messages",
+    "intents": [
+      "activate_deactivate_DND",
+      "flash_service_deactivation",
+      "call_waiting",
+      "pre_caller_deactivate",
+      "call_forwarding"
+    ],
+    "n_intents": 5
+  },
+  {
+    "name": "recharge_balance",
+    "description": "recharge, packs and plans, balance/validity, active plan, deductions, credit, PayGo, offers",
+    "intents": [
+      "show_balance",
+      "recharge",
+      "pack_plan_details",
+      "recharge_done_but_not_credited",
+      "balance_deduction",
+      "recharge_packs_and_plans",
+      "chotta_credit",
+      "rechargeForOthers",
+      "pay_G",
+      "vouchers_and_coupons",
+      "Hero_UL",
+      "vi_guarantee",
+      "online_recharge_tutorial",
+      "data_delight"
+    ],
+    "n_intents": 14
+  },
+  {
+    "name": "bills",
+    "description": "postpaid bill amount, copy, due date, dispute, breakup, billing date, GST, late fee, statements",
+    "intents": [
+      "bill_payment_amount",
+      "bill_copy_request",
+      "bill_payment_due_date",
+      "LPC_waiver",
+      "bill_too_high",
+      "bill_breakup",
+      "prepaid_invoice",
+      "SOA",
+      "bill_date",
+      "gst"
+    ],
+    "n_intents": 10
+  },
+  {
+    "name": "payments",
+    "description": "payment status, missing payment, receipts, cash, pay for others, how to pay, promise to pay, autopay, history",
+    "intents": [
+      "bill_recharge_history",
+      "payment_order_status",
+      "promise_to_pay",
+      "cash_payment",
+      "payForOthers",
+      "SI_auto_pay",
+      "payment_receipt",
+      "cancel_autopay",
+      "online_payment_tutorial",
+      "payment_not_visible"
+    ],
+    "n_intents": 10
+  },
+  {
+    "name": "account_profile",
+    "description": "account details, address/email/alternate number, ownership transfer, KYC, credit limit, call/SMS history",
+    "intents": [
+      "update_address",
+      "update_email",
+      "account_information",
+      "call_sms_history",
+      "update_alternate_number",
+      "credit_limit",
+      "skyc_reverification",
+      "transfer_of_ownership"
+    ],
+    "n_intents": 8
+  },
+  {
+    "name": "sim_number",
+    "description": "lost/PUK/eSIM, new connection, porting, prepaid-postpaid switch, barring, safe custody",
+    "intents": [
+      "redirect_buy_new_connection",
+      "port_out",
+      "PUK",
+      "lost_sim_phone",
+      "NPD",
+      "digital_sim",
+      "pre2post",
+      "post2pre",
+      "barred_check",
+      "safe_custody",
+      "redirect_track_sim",
+      "new_connection_or_esim"
+    ],
+    "n_intents": 12
+  },
+  {
+    "name": "vas",
+    "description": "value added services, caller tune, missed call alerts, opt-out",
+    "intents": [
+      "VAS_activate",
+      "VAS_activate_caller_tune",
+      "VAS_deactivate",
+      "VAS_active_services",
+      "VAS_complaints",
+      "VAS_activate_MCI",
+      "opt_out"
+    ],
+    "n_intents": 7
+  },
+  {
+    "name": "redirects",
+    "description": "broadband, dongles/MiFi, buy smartphone",
+    "intents": [
+      "redirect_broadband",
+      "redirect_dongles_mifi",
+      "redirect_buy_smartphones"
+    ],
+    "n_intents": 3
+  },
+  {
+    "name": "network_issues",
+    "description": "data/call/SMS not working, APN, 5G, VoLTE, VoWiFi",
+    "intents": [
+      "data_not_working",
+      "vowifi_enquiry",
+      "vowifi_complaints",
+      "vowifi_activate",
+      "calls_not_working",
+      "sms_not_working",
+      "apn_settings",
+      "5g",
+      "volte"
+    ],
+    "n_intents": 9
+  },
+  {
+    "name": "support_escalation",
+    "description": "human agent, customer care, complaint status, OTP, Vi app, stores, WhatsApp updates, fraud calls",
+    "intents": [
+      "find_a_vodafone_store",
+      "request_otp",
+      "talk_to_agent",
+      "customer_care",
+      "updates_on_whatsapp",
+      "spyder_app_download",
+      "SR_complaint_status",
+      "fraud_calls"
+    ],
+    "n_intents": 8
+  },
+  {
+    "name": "roaming_isd",
+    "description": "international roaming and ISD activation, deactivation and issues",
+    "intents": [
+      "roaming_pack_activate",
+      "roaming_pack_deactivate",
+      "Issue_with_ir_pack",
+      "Issue_with_ir_technical",
+      "ir_services_deactivate",
+      "deactivate_IR_pack"
+    ],
+    "n_intents": 6
+  },
+  {
+    "name": "plans_family_redx",
+    "description": "REDX, Vi Max, family plans, linking and delinking",
+    "intents": [
+      "redx_dispute_refund",
+      "redx_family",
+      "redx_amazon",
+      "redx_netflix",
+      "redx_faq",
+      "family_plan",
+      "VI_family",
+      "vi_max",
+      "family_linking",
+      "family_delinking"
+    ],
+    "n_intents": 10
+  },
+  {
+    "name": "ott_partner_benefits",
+    "description": "Hotstar, Sony LIV, Sun NXT, Prime, ZEE5, Swiggy, Norton, EazyDiner, EaseMyTrip, Spotify",
+    "intents": [
+      "hotstar",
+      "sony_liv",
+      "sun_next",
+      "amazon_prime",
+      "amazon_prime_postpaid",
+      "swiggy_one",
+      "norton_security",
+      "eazy_diner",
+      "ease_my_trip",
+      "vi_movies_tv",
+      "disney_hotstar",
+      "zee5",
+      "Spotify"
+    ],
+    "n_intents": 13
+  },
+  {
+    "name": "out_of_scope",
+    "description": "unrelated to Vi telecom",
+    "intents": [
+      "out_of_scope"
+    ],
+    "n_intents": 1
+  }
+]

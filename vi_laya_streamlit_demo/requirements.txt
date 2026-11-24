@@ -1,0 +1,8 @@
+# CPU-only PyTorch keeps Streamlit Community Cloud from resolving the large
+# CUDA build. The versions below are the ones used for local model inference.
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+laya==0.3.25
+torch==2.14.1+cpu
+transformers==5.20.2
+streamlit==1.65.0

@@ -1,0 +1,59 @@
+{
+  "family": {
+    "type": "choice",
+    "instructions": "Which Vi intent family best matches this customer message?",
+    "criteria": {
+      "payments": "Payments, payment status and payment failures",
+      "bills": "Bills, bill amount and bill payment due dates",
+      "recharge_balance": "Recharge, balance, data and validity",
+      "network_issues": "Network, signal, internet and connectivity",
+      "roaming_isd": "International roaming and ISD services",
+      "out_of_scope": "Message unrelated to Vi services"
+    }
+  },
+  "intents": {
+    "payments": {
+      "type": "choice",
+      "instructions": "Which specific payment intent best matches the customer message?",
+      "criteria": {
+        "cash_payment": "Paying a Vi bill in cash",
+        "payment_order_status": "Checking the status of a payment order",
+        "payment_not_visible": "Payment made but not visible in the account"
+      }
+    },
+    "bills": {
+      "type": "choice",
+      "instructions": "Which specific bill intent best matches the customer message?",
+      "criteria": {
+        "bill_payment_due_date": "Checking the bill payment due date",
+        "bill_breakup": "Understanding the detailed bill breakup",
+        "bill_payment_amount": "Checking the amount payable on a bill"
+      }
+    },
+    "recharge_balance": {
+      "type": "choice",
+      "instructions": "Which specific recharge or balance intent best matches the customer message?",
+      "criteria": {
+        "show_balance": "Checking remaining talktime, data and validity balance",
+        "recharge_done_but_not_credited": "Recharge completed but benefit not credited",
+        "online_recharge_tutorial": "How to recharge online"
+      }
+    },
+    "network_issues": {
+      "type": "choice",
+      "instructions": "Which specific network intent best matches the customer message?",
+      "criteria": {
+        "5g": "Checking 5G availability or service",
+        "network_issue": "Reporting a network or connectivity problem"
+      }
+    },
+    "roaming_isd": {
+      "type": "choice",
+      "instructions": "Which specific roaming intent best matches the customer message?",
+      "criteria": {
+        "roaming": "International roaming services and packs",
+        "isd": "International calling and ISD services"
+      }
+    }
+  }
+}

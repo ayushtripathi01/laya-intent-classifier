@@ -1,0 +1,23 @@
+# Python environments and generated files
+**/.venv/
+**/__pycache__/
+*.py[cod]
+*.log
+
+# Local credentials and Streamlit secrets
+.env
+.env.*
+!.env.example
+**/.streamlit/secrets.toml
+
+# Generated model archive duplicates the checkpoint and is not needed to run
+/vi_laya_model_bundle.zip
+
+# The deployed app loads the root checkpoint; checkpoint_latest is a full copy
+# and is excluded to avoid storing a second 644 MB weight file in Git LFS.
+/vi_laya_checkpoint/vi-laya-s0/checkpoint_latest/
+
+# OS/editor files
+.DS_Store
+.idea/
+.vscode/

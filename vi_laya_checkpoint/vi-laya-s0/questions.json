@@ -1,0 +1,43 @@
+{
+  "family": {
+    "type": "choice",
+    "instructions": "Which area of Vi customer service does this message belong to?",
+    "criteria": {
+      "chitchat_control": "greetings, thanks, goodbye, abuse, ok, generic help, restart/stop, change language",
+      "call_features": "DND, call waiting, call forwarding, pre-call announcement, flash messages",
+      "recharge_balance": "recharge, packs and plans, balance/validity, active plan, deductions, credit, PayGo, offers",
+      "bills": "postpaid bill amount, copy, due date, dispute, breakup, billing date, GST, late fee, statements",
+      "payments": "payment status, missing payment, receipts, cash, pay for others, how to pay, promise to pay, autopay, history",
+      "account_profile": "account details, address/email/alternate number, ownership transfer, KYC, credit limit, call/SMS history",
+      "sim_number": "lost/PUK/eSIM, new connection, porting, prepaid-postpaid switch, barring, safe custody",
+      "vas": "value added services, caller tune, missed call alerts, opt-out",
+      "redirects": "broadband, dongles/MiFi, buy smartphone",
+      "network_issues": "data/call/SMS not working, APN, 5G, VoLTE, VoWiFi",
+      "support_escalation": "human agent, customer care, complaint status, OTP, Vi app, stores, WhatsApp updates, fraud calls",
+      "roaming_isd": "international roaming and ISD activation, deactivation and issues",
+      "plans_family_redx": "REDX, Vi Max, family plans, linking and delinking",
+      "ott_partner_benefits": "Hotstar, Sony LIV, Sun NXT, Prime, ZEE5, Swiggy, Norton, EazyDiner, EaseMyTrip, Spotify",
+      "out_of_scope": "unrelated to Vi telecom"
+    }
+  },
+  "intent": {
+    "type": "choice",
+    "instructions": "Which specific customer intent does this message express?",
+    "criteria": {
+      "show_balance": "Check talktime, data balance or plan validity",
+      "recharge": "Recharge now or change plan",
+      "pack_plan_details": "Details of my current active plan or pack",
+      "recharge_done_but_not_credited": "Recharge done but balance or plan not received",
+      "balance_deduction": "Balance deducted wrongly, want it refunded",
+      "recharge_packs_and_plans": "Browse and choose a recharge plan or pack to buy",
+      "chotta_credit": "Emergency talktime or data loan",
+      "rechargeForOthers": "Recharge someone else's Vi number",
+      "pay_G": "Vi PayGo: data from main balance after pack ends",
+      "vouchers_and_coupons": "Vouchers, coupons or discount offers on recharge",
+      "Hero_UL": "Hero Unlimited prepaid plan and night data",
+      "vi_guarantee": "Vi Guarantee 130GB extra data",
+      "online_recharge_tutorial": "How to recharge online or recharge trouble",
+      "data_delight": "Data Delight packs and extra data offer"
+    }
+  }
+}
