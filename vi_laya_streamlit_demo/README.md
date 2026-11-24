@@ -1,5 +1,7 @@
 # Vi Laya intent classification demo
 
+**Live app:** [Open the Vi Laya classifier](https://laya-intent-classifier-j3lwdmfy6hucbg4lerek3m.streamlit.app/)
+
 This app loads the trained checkpoint already present in this workspace:
 `../vi_laya_checkpoint/vi-laya-s0/`. It uses the checkpoint's saved tokenizer,
 encoder, weights, questions and calibration configuration. It does not download a

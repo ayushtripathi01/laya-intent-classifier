@@ -4,6 +4,8 @@ This repository contains a Streamlit app for the Vi Laya two-stage intent
 classifier. It predicts one of 15 intent families, then evaluates only the
 intents assigned to that family. The dataset taxonomy contains 125 intents.
 
+**Live app:** [Open the Vi Laya classifier](https://laya-intent-classifier-j3lwdmfy6hucbg4lerek3m.streamlit.app/)
+
 ## Run locally
 
 ```bash
